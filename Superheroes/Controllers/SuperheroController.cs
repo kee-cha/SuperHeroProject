@@ -87,19 +87,18 @@ namespace Superheroes.Controllers
         //GET: Superhero/Delete/5
         public ActionResult Delete(int id)
         {
-            SuperHero superhero = new SuperHero();
-            superhero = context.SuperHeroes.Where(s => s.Id == id).Select(s => s).SingleOrDefault();            
+            SuperHero superhero = context.SuperHeroes.Where(s => s.Id == id).Select(s => s).SingleOrDefault();            
             return View(superhero);
         }
 
         // POST: Superhero/Delete/5
         [HttpPost]
-        public ActionResult Delete(SuperHero superhero)
+        public ActionResult Delete(int id, SuperHero superhero)
         {
             try
             {
                 // TODO: Add delete logic here
-                //
+                superhero = context.SuperHeroes.Where(s => s.Id == id).Select(s => s).SingleOrDefault();
                 context.SuperHeroes.Remove(superhero);
                 context.SaveChanges();
                 return RedirectToAction("Index");
