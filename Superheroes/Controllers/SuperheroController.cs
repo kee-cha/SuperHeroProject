@@ -24,8 +24,7 @@ namespace Superheroes.Controllers
         // GET: Superhero/Details/5
         public ActionResult Details(int id)
         {
-            SuperHero superhero = new SuperHero();
-            superhero = context.SuperHeroes.Where(s => s.Id == id).Select(s => s).SingleOrDefault();
+            SuperHero superhero =context.SuperHeroes.Where(s => s.Id == id).Select(s => s).SingleOrDefault();
             return View(superhero);
         }
 
@@ -38,11 +37,12 @@ namespace Superheroes.Controllers
 
         // POST: Superhero/Create
         [HttpPost]
-        public ActionResult Create([Bind(Include = "Id,Name,AlterEgo")]SuperHero superhero)
+        public ActionResult Create(SuperHero superhero)
         {
             try
             {
                 // TODO: Add insert logic here
+                
                 context.SuperHeroes.Add(superhero);
                 context.SaveChanges();
                 return RedirectToAction("Index");
@@ -57,8 +57,7 @@ namespace Superheroes.Controllers
         // GET: Superhero/Edit/5
         public ActionResult Edit(int id)
         {
-            SuperHero superhero = new SuperHero();
-            superhero = context.SuperHeroes.Where(s => s.Id == id).Select(s => s).SingleOrDefault();
+            SuperHero superhero = context.SuperHeroes.Where(s => s.Id == id).Select(s => s).SingleOrDefault();
             return View(superhero);
         }
 
