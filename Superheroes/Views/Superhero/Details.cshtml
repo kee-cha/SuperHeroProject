@@ -3,56 +3,71 @@
 @{
     ViewBag.Title = "Details";
 }
+    <body class="bg">
+        <h2>Details</h2>
 
-<h2>Details</h2>
+        <div>
+            <h4>@Html.DisplayFor(model=>model.AlterEgo)</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
 
-<div>
-    <h4>SuperHero</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
+                @*<dt>
             @Html.DisplayNameFor(model => model.AlterEgo)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.AlterEgo)
-        </dd>
+        </dd>*@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PrimaryAbility)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PrimaryAbility)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PrimaryAbility)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.PrimaryAbility)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SecondaryAbility)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.SecondaryAbility)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SecondaryAbility)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.SecondaryAbility)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Weakness)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CatchPhrase)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Weakness)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Hometown)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.CatchPhrase)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Hometown)
+                </dd>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                <dt>
+                    @Html.DisplayNameFor(model => model.CatchPhrase)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CatchPhrase)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </body>

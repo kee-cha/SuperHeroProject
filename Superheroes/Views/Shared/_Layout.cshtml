@@ -6,8 +6,6 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
-
 </head>
 <body>
     <div class="navbar">
@@ -25,12 +23,6 @@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
-    <br />
-    <div class="col-md-12" align="center">
-        <img src="~/Content/superman.jpg" width="500" />
-    </div>
-    <br />
     <div class="container body-content">
         @RenderBody()
         <hr />

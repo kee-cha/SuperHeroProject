@@ -3,62 +3,78 @@
 @{
     ViewBag.Title = "Delete";
 }
+    <body class="bg">
+        <h2>Delete</h2>
 
-<h2>Delete</h2>
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>SuperHero</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>SuperHero</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AlterEgo)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AlterEgo)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.AlterEgo)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.AlterEgo)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PrimaryAbility)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PrimaryAbility)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PrimaryAbility)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.PrimaryAbility)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.SecondaryAbility)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SecondaryAbility)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.SecondaryAbility)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Weakness)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SecondaryAbility)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Weakness)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Hometown)
+                </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CatchPhrase)
-        </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Hometown)
+                </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.CatchPhrase)
-        </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.CatchPhrase)
+                </dt>
 
-    </dl>
+                <dd>
+                    @Html.DisplayFor(model => model.CatchPhrase)
+                </dd>
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
+            </dl>
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
         </div>
-    }
-</div>
+    </body>

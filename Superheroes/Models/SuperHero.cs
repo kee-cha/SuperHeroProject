@@ -17,6 +17,11 @@ namespace Superheroes.Models
         public string PrimaryAbility { get; set; }
         [Display(Name = "Secondary Ability")]
         public string SecondaryAbility { get; set; }
+        [Display(Name ="Weakness")]
+        public string Weakness { get; set; }
+        [Display(Name ="Hometown")]
+        public string Hometown { get; set; }
+
         [Display(Name = "Catch Phrase")]
         public string CatchPhrase { get; set; }
     }
