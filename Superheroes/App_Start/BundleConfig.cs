@@ -24,6 +24,7 @@ namespace Superheroes
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-superhero.css",
+                      "~/Content/styles.css",
                       "~/Content/site.css"));
 
         }

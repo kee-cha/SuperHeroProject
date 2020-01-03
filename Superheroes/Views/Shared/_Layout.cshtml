@@ -8,29 +8,19 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar">
-        <div class="container">
-            <div class="navbar">
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse">
-                <ul class="navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Superheroes", "Index", "Superhero")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark justify-content-center">
+        <span class="navbar-nav">
+            <a class="navbar-brand">@Html.ActionLink("HOME", "Index", "Home")</a>
+            <a class="navbar-brand">@Html.ActionLink("ABOUT", "About", "Home")</a>
+            <a class="navbar-brand">@Html.ActionLink("CONTACT", "Contact", "Home")</a>
+            <a class="navbar-brand">@Html.ActionLink("SUPERHERO", "Index", "Superhero")</a>
+        </span>
+        <a align="right">@Html.Partial("_LoginPartial")</a>
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

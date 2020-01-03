@@ -163,7 +163,7 @@ sup {
 }
 
 a {
-  color: darkblue;
+  color: white;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4620,7 +4620,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.25rem 1rem;
+  /*padding: 0.25rem 1rem;*/
 }
 
 .navbar .container,
@@ -4640,8 +4640,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  /*padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;*/
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;

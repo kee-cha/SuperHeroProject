@@ -73,6 +73,8 @@ namespace Superheroes.Controllers
                 updateHero.AlterEgo = superhero.AlterEgo;
                 updateHero.PrimaryAbility = superhero.PrimaryAbility;
                 updateHero.SecondaryAbility = superhero.SecondaryAbility;
+                updateHero.Weakness = superhero.Weakness;
+                updateHero.Hometown = superhero.Hometown;
                 updateHero.CatchPhrase = superhero.CatchPhrase;
                 context.SaveChanges();
                 return RedirectToAction("Index");

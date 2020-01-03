@@ -1,0 +1,28 @@
+﻿body {
+}
+
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    margin: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    margin: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        margin-top: 26.5px;
+        margin-bottom: 26.5px;
+        line-height: 27px;
+    }
+}
