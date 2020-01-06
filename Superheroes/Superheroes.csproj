@@ -198,9 +198,12 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\justiceleague.jpg" />
+    <Content Include="Content\marvel-wallpaper.jpg" />
     <Content Include="Content\shazam.jpg" />
     <Content Include="Content\styles.css" />
+    <Content Include="Content\superheroes.jpg" />
     <Content Include="Content\superman.jpg" />
+    <Content Include="Content\superr-heroes.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

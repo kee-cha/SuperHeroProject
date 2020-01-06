@@ -1,4 +1,5 @@
 ﻿body {
+    background-size:cover;
 }
 
 
@@ -26,3 +27,4 @@
         line-height: 27px;
     }
 }
+
